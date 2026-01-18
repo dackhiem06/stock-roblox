@@ -124,3 +124,14 @@ footer {
   opacity: 0.6;
   margin-top: 60px;
 }
+.link-blue {
+  color: #4da3ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-blue:hover {
+  text-decoration: underline;
+  color: #7bb6ff;
+}
+
