@@ -49,6 +49,16 @@
 <footer>
   © 2026 KHIÊM ROBLOX SHOP – Không liên kết Roblox
 </footer>
+<script>
+  const links = document.querySelectorAll("nav a");
+  const current = location.pathname.split("/").pop();
 
+  links.forEach(link => {
+    if (link.getAttribute("href") === current) {
+      link.classList.add("active");
+    }
+  });
+</script>
 </body>
 </html>
+
