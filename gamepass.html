@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Gift Gamepass</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Gift Gamepass</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <h1>🎁 Gift Gamepass</h1>
-  <p>Gift trực tiếp – Nhiều game</p>
+  <p>Gift trực tiếp – Nhanh – An toàn</p>
 </header>
 
 <nav>
   <a href="index.html">Trang chủ</a>
-  <a href="robux.html">Robux</a>
-  <a href="bloxfruits.html">Blox Fruits</a>
+  <a href="robux.html">Robux 120h</a>
+  <a class="active" href="gamepass.html">Gift Gamepass</a>
+  <a href="bloxfruits.html">Trái Blox Fruits</a>
   <a href="account.html">Acc Game</a>
   <a href="contact.html">Liên hệ</a>
 </nav>
@@ -23,30 +24,25 @@
 <div class="container">
   <div class="grid">
     <div class="card">
-      <h3>Gamepass 100R</h3>
+      <h3>Gamepass 100 Robux</h3>
       <div class="price">XXX.000đ</div>
-      <div class="note">Gift trực tiếp</div>
+      <div class="desc">Gift trực tiếp vào game</div>
     </div>
 
     <div class="card">
-      <h3>Gamepass 500R</h3>
+      <h3>Gamepass 500 Robux</h3>
       <div class="price">XXX.000đ</div>
-      <div class="note">Hỗ trợ nhiều game</div>
+      <div class="desc">Hỗ trợ nhiều game Roblox</div>
+    </div>
+
+    <div class="card">
+      <h3>Gamepass Theo Yêu Cầu</h3>
+      <div class="price">Liên hệ</div>
+      <div class="desc">Nhận gift theo game bạn chơi</div>
     </div>
   </div>
 </div>
 
 <footer>© 2026 KHIÊM ROBLOX SHOP</footer>
-  <script>
-  const links = document.querySelectorAll("nav a");
-  const current = location.pathname.split("/").pop();
-
-  links.forEach(link => {
-    if (link.getAttribute("href") === current) {
-      link.classList.add("active");
-    }
-  });
-</script>
 </body>
 </html>
-
