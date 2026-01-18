@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background:
+    radial-gradient(circle at top, #3a4cff, #0b0f2a 60%),
+    radial-gradient(circle at bottom, #7a3cff, #050814 60%);
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #4a6cff, #8b4cff);
+  padding: 26px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  margin-top: 6px;
+  opacity: 0.9;
+}
+
+/* MENU */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  background: rgba(10, 15, 40, 0.9);
+  padding: 12px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2e4cff, #6a3cff);
+  font-size: 14px;
+}
+
+nav a:hover {
+  opacity: 0.85;
+}
+
+/* CONTENT */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 36px 16px;
+}
+
+h2 {
+  color: #9fbaff;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: rgba(20, 25, 70, 0.85);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 0 40px rgba(90, 120, 255, 0.18);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4dffb3;
+  margin: 10px 0;
+}
+
+.note {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* CONTACT */
+.contact-box {
+  background: rgba(20, 25, 70, 0.9);
+  border-radius: 20px;
+  padding: 28px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 13px;
+  opacity: 0.6;
+}
