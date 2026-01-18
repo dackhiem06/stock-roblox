@@ -85,6 +85,7 @@ nav a.active {
   padding: 20px;
   transition: 0.25s;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  position: relative; /* QUAN TRỌNG */
 }
 
 .card:hover {
@@ -135,24 +136,35 @@ footer {
   color: #7bb6ff;
 }
 
+/* NÚT MUA NGAY – CHỈ HIỆN KHI HOVER */
 .buy-btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 8px 16px;
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  pointer-events: none;
+
+  padding: 8px 18px;
   border-radius: 20px;
   background: linear-gradient(135deg, #3a7bff, #4da3ff);
   color: #fff;
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
-  text-align: center;
   transition: 0.25s;
-  box-shadow: 0 0 10px rgba(77,163,255,0.5);
+  box-shadow: 0 0 14px rgba(77,163,255,0.6);
+}
+
+/* Khi hover card thì nút hiện ra */
+.card:hover .buy-btn {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
 }
 
 .buy-btn:hover {
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 0 18px rgba(77,163,255,0.9);
+  box-shadow: 0 0 22px rgba(77,163,255,0.95);
   background: linear-gradient(135deg, #4da3ff, #6bb6ff);
 }
 
