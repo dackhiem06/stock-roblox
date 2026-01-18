@@ -31,12 +31,16 @@ header p {
 
 /* MENU */
 nav {
+  position: sticky;      /* QUAN TRỌNG */
+  top: 0;                /* DÍNH TRÊN CÙNG */
+  z-index: 9999;         /* NỔI LÊN TRÊN */
   display: flex;
   justify-content: center;
   gap: 12px;
-  background: rgba(10, 15, 40, 0.9);
+  background: rgba(10, 15, 40, 0.95);
   padding: 12px;
   flex-wrap: wrap;
+  backdrop-filter: blur(10px); /* Hiệu ứng kính mờ */
 }
 
 nav a {
@@ -107,4 +111,8 @@ footer {
   font-size: 13px;
   opacity: 0.6;
 }
+.container {
+  padding-top: 60px;
+}
+
 
