@@ -1,33 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-:root{
-  --blue:#1e88e5;
-  --blue-light:#e3f2fd;
-  --dark:#1f2937;
-  --border:#e5e7eb;
-}
-
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
 body{
-  font-family:'Roboto',sans-serif;
-  background:#f1f5f9;
-  color:var(--dark);
+  font-family:Roboto,sans-serif;
+  background:#f3f6fb;
+  color:#1f2937;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 header{
   background:#fff;
-  border-bottom:1px solid var(--border);
+  border-bottom:1px solid #e5e7eb;
   position:sticky;
   top:0;
-  z-index:9999;
+  z-index:999;
 }
-
 .header-wrap{
   max-width:1200px;
   margin:auto;
@@ -36,499 +23,130 @@ header{
   align-items:center;
   justify-content:space-between;
 }
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{height:40px}
+.logo span{font-weight:700;color:#2563eb;font-size:20px}
 
-.logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
+nav{display:flex;gap:20px}
+nav a{text-decoration:none;color:#111;font-weight:500}
+nav a:hover{color:#2563eb}
 
-.logo img{height:40px;}
-
-.logo span{
-  font-size:20px;
-  font-weight:700;
-  color:var(--blue);
-}
-
-/* ================= NAV ================= */
-nav{
-  display:flex;
-  gap:22px;
-  align-items:center;
-}
-
-nav a{
-  text-decoration:none;
-  color:#111;
-  font-weight:500;
-  position:relative;
-}
-
-nav a:hover{color:var(--blue);}
-
-/* dropdown */
-.nav-dropdown{position:relative;}
-
+/* DROPDOWN */
+.nav-dropdown{position:relative}
 .nav-dropdown-content{
   display:none;
   position:absolute;
-  top:42px;
-  left:0;
+  top:38px;
   background:#fff;
-  min-width:220px;
-  border:1px solid var(--border);
+  min-width:200px;
+  border-radius:10px;
   box-shadow:0 12px 30px rgba(0,0,0,.15);
-  border-radius:8px;
-  z-index:99999;
 }
-
 .nav-dropdown-content a{
+  display:block;
   padding:12px 16px;
-  display:block;
-  font-size:14px;
 }
+.nav-dropdown:hover .nav-dropdown-content{display:block}
 
-.nav-dropdown:hover .nav-dropdown-content{
-  display:block;
-}
-
-/* ================= BANNER ================= */
-.banner{
-  position:relative;
-  background:url("https://images.unsplash.com/photo-1627855437600-b0fbb0edcfd8") center/cover no-repeat;
-  padding:90px 16px;
-  text-align:center;
-  color:#fff;
-}
-
-.banner::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,.55);
-}
-
-.banner *{
-  position:relative;
-  z-index:2;
-}
-
-.banner h1{
-  font-size:38px;
-  font-weight:700;
-}
-
-.banner p{
-  font-size:18px;
-  opacity:.9;
-}
-
-/* ================= SECTION ================= */
-.section{
-  max-width:1200px;
-  margin:50px auto;
-  padding:0 16px;
-}
-
-.section-title{
-  font-size:24px;
-  font-weight:700;
-  margin-bottom:24px;
-  color:var(--blue);
-}
-
-/* ================= CARD / BOX ================= */
-.product-card{
-  background:#fff;
-  border-radius:14px;
-  padding:20px;
-  border:1px solid var(--border);
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.product-card p{margin:8px 0;}
-
-/* ================= FOOTER ================= */
-footer{
-  background:#fff;
-  border-top:1px solid var(--border);
-  padding:20px;
-  text-align:center;
-  font-size:14px;
-  color:#555;
-}
-
-/* ================= MOBILE ================= */
-.menu-btn{
-  display:none;
-  font-size:28px;
-  cursor:pointer;
-  color:var(--blue);
-}
-
+/* MOBILE MENU */
+.menu-btn{display:none;font-size:28px;cursor:pointer}
 .mobile-menu{
   display:none;
   position:fixed;
   inset:0;
   background:rgba(0,0,0,.6);
-  z-index:99999;
   align-items:center;
   justify-content:center;
 }
-
-.mobile-menu.active{display:flex;}
-
+.mobile-menu.active{display:flex}
 .mobile-box{
   background:#fff;
   width:85%;
-  border-radius:12px;
+  border-radius:14px;
   padding:20px;
 }
-
 .mobile-box a{
   display:block;
   padding:14px;
-  border-bottom:1px solid var(--border);
   text-decoration:none;
   color:#111;
-  font-weight:500;
+  border-bottom:1px solid #e5e7eb;
 }
 
-@media(max-width:900px){
-  nav{display:none;}
-  .menu-btn{display:block;}
-}
-/* ===== HERO CONTACT SUPPORT ===== */
-.hero-contact {
-  background: #f3f6f9;
-  padding: 60px 16px;
-  display: flex;
-  justify-content: center;
-}
-
-.contact-title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 24px;
-}
-
-.contact-actions {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-.contact-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 16px;
-  border-radius: 999px;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #ffffff;
-  transition: all 0.25s ease;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-}
-
-.contact-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
-}
-
-/* Facebook */
-.contact-btn.facebook {
-  background: linear-gradient(135deg, #1877f2, #4ea1ff);
-}
-
-/* Zalo */
-.contact-btn.zalo {
-  background: linear-gradient(135deg, #0068ff, #4fa3ff);
-}
-
-/* Highlight text */
-.contact-btn .highlight {
-  color: #dbeafe;
-  font-weight: 700;
-  margin-left: 4px;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .contact-actions {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-title {
-    font-size: 20px;
-  }
-}
-/* ===== PAYMENT GUIDE CARD ===== */
-
-.payment-title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #ef4444;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.payment-note {
-  font-size: 15px;
-  color: #2563eb;
-  margin-bottom: 20px;
-}
-
-.payment-method {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.payment-row {
-  display: grid;
-  grid-template-columns: 180px 1fr auto;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 16px;
-  border-radius: 12px;
-  background: #f8fafc;
-  border: 1px solid #e5e7eb;
-}
-
-.payment-row .label {
-  font-weight: 600;
-  color: #374151;
-}
-
-.payment-row .value {
-  font-weight: 700;
-  color: #16a34a;
-  word-break: break-all;
-}
-
-.payment-row button {
-  background: linear-gradient(135deg, #2563eb, #60a5fa);
-  border: none;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: .2s;
-}
-
-.payment-row button:hover {
-  opacity: .9;
-  transform: scale(1.05);
-}
-
-/* MOBILE */
-@media(max-width:600px){
-  .payment-row{
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-
-  .payment-row button{
-    width: 100%;
-  }
-}
-
-/* LINK BLUE */
-.link-blue{
-  color:#2563eb;
-  font-weight:600;
-  text-decoration:none;
-}
-
-.link-blue:hover{
-  text-decoration:underline;
-}
-
-/* ================= INFO CARDS LAYOUT (FIX 3 CARD NGANG) ================= */
-
+/* INFO CARDS */
 .info-cards{
   max-width:1200px;
   margin:60px auto;
   padding:0 16px;
-
   display:grid;
-  grid-template-columns: repeat(3, 1fr); /* ÉP 3 CARD NGANG */
-  gap:28px;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
 }
-
-/* CARD CHUNG */
 .info-card{
-  background:#ffffff;
+  background:#fff;
   border-radius:18px;
-  padding:26px 24px;
-
+  padding:24px;
   border:1px solid #e5e7eb;
   box-shadow:0 8px 22px rgba(0,0,0,.08);
-
-  transition: all .35s ease;
-  display:flex;
-  flex-direction:column;
-}
-
-/* HOVER DẬP NỔI (GIỐNG SIEUTHIROBLOX) */
-.info-card:hover{
-  transform: translateY(-10px);
-  box-shadow:0 25px 50px rgba(0,0,0,.2);
-}
-
-/* ================= CONTACT CARD ================= */
-
-.contact-title{
-  font-size:24px;
-  font-weight:700;
-  margin-bottom:20px;
-  color:#0f172a;
-}
-
-.contact-actions{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:16px;
-}
-
-.contact-btn{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  padding:14px 18px;
-  border-radius:999px;
-
-  font-size:16px;
-  font-weight:600;
-  text-decoration:none;
-  color:#fff;
-
   transition:.3s;
 }
-
-.contact-btn.facebook{
-  background:linear-gradient(135deg,#1877f2,#60a5fa);
+.info-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 24px 50px rgba(0,0,0,.2);
 }
-
-.contact-btn.zalo{
-  background:linear-gradient(135deg,#0068ff,#4f9cff);
-}
-
-.contact-btn:hover{
-  opacity:.95;
-  transform:scale(1.04);
-}
-
-.contact-btn .highlight{
-  margin-left:4px;
-  color:#dbeafe;
-  font-weight:700;
-}
-
-/* ================= PAYMENT CARD ================= */
-
-.payment-title{
-  font-size:24px;
-  font-weight:700;
-  color:#ef4444;
-  margin-bottom:8px;
-  display:flex;
-  align-items:center;
-  gap:8px;
-}
-
-.payment-note{
-  font-size:14px;
-  color:#2563eb;
-  margin-bottom:20px;
-}
-
-.payment-method{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-}
-
-.payment-row{
-  display:grid;
-  grid-template-columns:180px 1fr auto;
-  align-items:center;
-  gap:12px;
-
-  padding:14px 16px;
-  border-radius:12px;
-
-  background:#f8fafc;
-  border:1px solid #e5e7eb;
-}
-
-.payment-row .label{
-  font-weight:600;
-  color:#374151;
-}
-
-.payment-row .value{
-  font-weight:700;
-  color:#16a34a;
-}
-
-.payment-row button{
-  background:linear-gradient(135deg,#2563eb,#60a5fa);
-  border:none;
-  color:#fff;
-
-  padding:8px 14px;
-  border-radius:10px;
-  font-weight:600;
-  cursor:pointer;
-  transition:.25s;
-}
-
-.payment-row button:hover{
-  transform:scale(1.05);
-  opacity:.9;
-}
-
-/* ================= WELCOME CARD ================= */
-
-.section-title{
+.card-title{
   font-size:22px;
   font-weight:700;
-  color:#2563eb;
+  margin-bottom:16px;
+}
+
+/* CONTACT */
+.contact-actions{display:flex;flex-direction:column;gap:12px}
+.contact-btn{
+  padding:14px;
+  border-radius:999px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  text-align:center;
+}
+.contact-btn.facebook{background:#1877f2}
+.contact-btn.zalo{background:#0068ff}
+.highlight{color:#dbeafe}
+
+/* PAYMENT */
+.payment-note{font-size:14px;color:#2563eb;margin-bottom:16px}
+.payment-row{
+  display:grid;
+  grid-template-columns:1fr auto auto;
+  align-items:center;
+  gap:12px;
   margin-bottom:12px;
 }
+.payment-row button{
+  background:#2563eb;
+  color:#fff;
+  border:none;
+  padding:8px 14px;
+  border-radius:10px;
+  cursor:pointer;
+}
 
-/* ================= RESPONSIVE ================= */
+/* FOOTER */
+footer{
+  background:#fff;
+  border-top:1px solid #e5e7eb;
+  padding:20px;
+  text-align:center;
+  color:#555;
+}
 
+/* RESPONSIVE */
 @media(max-width:1024px){
-  .info-cards{
-    grid-template-columns:1fr 1fr;
-  }
+  .info-cards{grid-template-columns:1fr 1fr}
 }
-
 @media(max-width:640px){
-  .info-cards{
-    grid-template-columns:1fr;
-  }
-
-  .payment-row{
-    grid-template-columns:1fr;
-    gap:8px;
-  }
-
-  .payment-row button{
-    width:100%;
-  }
+  nav{display:none}
+  .menu-btn{display:block}
+  .info-cards{grid-template-columns:1fr}
 }
-
-
-
-
