@@ -1,0 +1,223 @@
+/* ================= RESET ================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f7ff;
+  color: #222;
+}
+
+/* ================= HEADER ================= */
+.shop-header {
+  background: #0a58ff;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.shop-header-wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.shop-logo img {
+  height: 36px;
+}
+
+.shop-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.shop-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.shop-dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 190px;
+  top: 28px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  z-index: 99;
+}
+
+.shop-dropdown-content a {
+  display: block;
+  padding: 10px 14px;
+  color: #222;
+}
+
+.shop-dropdown:hover .shop-dropdown-content {
+  display: block;
+}
+
+/* ================= MOBILE MENU ================= */
+.shop-menu-btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.shop-mobile {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  display: none;
+  z-index: 1000;
+}
+
+.shop-mobile.active {
+  display: block;
+}
+
+.shop-mobile-box {
+  width: 260px;
+  height: 100%;
+  background: #fff;
+  padding: 20px;
+}
+
+.shop-mobile-box a {
+  display: block;
+  margin-bottom: 14px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+/* ================= PAGE HEADER ================= */
+.shop-page-header {
+  background: linear-gradient(135deg,#0a58ff,#4f7dff);
+  color: #fff;
+  text-align: center;
+  padding: 34px 16px;
+}
+
+.shop-page-header h1 {
+  font-size: 26px;
+}
+
+.shop-page-header p {
+  margin-top: 6px;
+  opacity: .9;
+}
+
+/* ================= CONTAINER ================= */
+.shop-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 16px;
+}
+
+/* ================= GRID ================= */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+/* ================= CARD ================= */
+.shop-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0,0,0,.15);
+}
+
+.shop-card img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.shop-card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.shop-price {
+  font-weight: bold;
+  color: #0a58ff;
+  margin-bottom: 6px;
+}
+
+.shop-desc {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.shop-buy {
+  display: inline-block;
+  background: #0a58ff;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background .2s;
+}
+
+.shop-buy:hover {
+  background: #0848d9;
+}
+
+/* ================= FOOTER ================= */
+.shop-footer {
+  background: #0a58ff;
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  margin-top: 40px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .shop-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-nav {
+    display: none;
+  }
+
+  .shop-menu-btn {
+    display: block;
+  }
+
+  .shop-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
