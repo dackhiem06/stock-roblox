@@ -1,116 +1,98 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taphoarbx.com – Roblox Shop</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Taphoarbx.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- HEADER -->
-<header>
-  <div class="header-wrap">
+<header class="top-header">
+  <div class="container header-flex">
     <div class="logo">
       <img src="logo.png" alt="Taphoarbx">
       <span>Taphoarbx.com</span>
     </div>
-
-    <nav>
-      <a class="active" href="index.html">Trang chủ</a>
-      <div class="nav-dropdown">
-        <a href="#">Sản phẩm ▾</a>
-        <div class="nav-dropdown-content">
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <div class="dropdown">
+        <span>Sản phẩm ▾</span>
+        <div class="dropdown-menu">
           <a href="robux.html">Robux 120h</a>
           <a href="gamepass.html">Gift Gamepass</a>
-          <a href="bloxfruits.html">Trái / Rương</a>
+          <a href="bloxfruits.html">Trái Rương</a>
           <a href="perm.html">Permanent</a>
           <a href="account.html">Acc Game</a>
         </div>
       </div>
       <a href="contact.html">Liên hệ</a>
     </nav>
-
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
   </div>
 </header>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <div class="mobile-box">
-    <a href="index.html">Trang chủ</a>
-    <a href="robux.html">Robux 120h</a>
-    <a href="gamepass.html">Gift Gamepass</a>
-    <a href="bloxfruits.html">Trái / Rương</a>
-    <a href="perm.html">Permanent</a>
-    <a href="account.html">Acc Game</a>
-    <a href="contact.html">Liên hệ</a>
-  </div>
-</div>
+<!-- MAIN -->
+<main class="container">
 
-<!-- INFO CARDS -->
-<section class="info-cards">
+  <!-- STACK CARDS -->
+  <section class="stack-cards">
 
-  <!-- CONTACT -->
-  <div class="info-card">
-    <h2 class="card-title">📞 Contact Support</h2>
-    <div class="contact-actions">
-      <a href="https://www.facebook.com/dongdackhiemGDTG" target="_blank" class="contact-btn facebook">
-        Facebook: <span class="highlight">Đồng Đắc Khiêm</span>
-      </a>
-      <a href="https://chat.zalo.me/?phone=0702403059" target="_blank" class="contact-btn zalo">
-        Zalo: <span class="highlight">0702403059</span>
-      </a>
-    </div>
-  </div>
-
-  <!-- PAYMENT -->
-  <div class="info-card">
-    <h2 class="card-title">💳 Hướng dẫn thanh toán</h2>
-    <p class="payment-note">Thanh toán bằng chuyển khoản hoặc gachthefast</p>
-
-    <div class="payment-row">
-      <span>MB Bank:</span>
-      <b id="mb">0702403059</b>
-      <button onclick="copyText('mb')">Copy</button>
+    <!-- IMPORTANT NOTES -->
+    <div class="stack-card">
+      <h2 class="stack-title important">⚠️ Important Notes</h2>
+      <p>Check and change your password immediately after receiving your account.</p>
+      <p>Record the process if there's an account error – you'll receive a refund!</p>
+      <p>Tool to convert and cut user:pass:
+        <a href="#" class="link">Click here</a>
+      </p>
     </div>
 
-    <div class="payment-row">
-      <span>Gachthefast:</span>
-      <b id="gach">0702403059</b>
-      <button onclick="copyText('gach')">Copy</button>
+    <!-- PAYMENT -->
+    <div class="stack-card">
+      <h2 class="stack-title payment">💳 Payment Instructions</h2>
+      <p class="note">Pay with Binance ID or LTC cryptocurrency.</p>
+
+      <div class="pay-row">
+        <span>Binance ID:</span>
+        <b id="binance">574296563</b>
+        <button onclick="copyText('binance')">Copy</button>
+      </div>
+
+      <div class="pay-row">
+        <span>LTC:</span>
+        <b id="ltc">LfNYxmsBsVu3bShbiJdJz8BeHTGw58TGk</b>
+        <button onclick="copyText('ltc')">Copy</button>
+      </div>
+
+      <div class="auto-btn">🔐 Auto crypto</div>
     </div>
-  </div>
 
-  <!-- WELCOME -->
-  <div class="info-card">
-    <h2 class="card-title">👋 Chào mừng bạn</h2>
-    <p>
-      Website dùng để xem giá & dịch vụ.<br>
-      Vui lòng chọn danh mục phía trên để xem chi tiết.
-    </p>
-    <hr>
-    <p>
-      📌 <b>Hướng dẫn mua hàng:</b><br>
-      • Chọn danh mục<br>
-      • Xem giá<br>
-      • Nhấn mua để liên hệ shop
-    </p>
-  </div>
+    <!-- CONTACT -->
+    <div class="stack-card">
+      <h2 class="stack-title contact">📞 Contact Support</h2>
 
-</section>
+      <div class="contact-grid">
+        <div class="contact-pill">💬 Zalo: 0347530570</div>
+        <div class="contact-pill">🎮 Discord: nxt.04</div>
+        <div class="contact-pill">🖥️ Discord Server</div>
+        <div class="contact-pill">✈️ Telegram: Realnxt</div>
+      </div>
+    </div>
 
-<footer>
-  © 2026 Taphoarbx.com – Roblox Shop
+  </section>
+
+</main>
+
+<footer class="footer">
+  © 2026 KHIÊM ROBLOX SHOP – Không liên kết Roblox
 </footer>
 
 <script>
-function toggleMenu(){
-  document.getElementById("mobileMenu").classList.toggle("active");
-}
 function copyText(id){
-  navigator.clipboard.writeText(document.getElementById(id).innerText);
-  alert("Đã sao chép!");
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert("Đã sao chép: " + text);
 }
 </script>
 
