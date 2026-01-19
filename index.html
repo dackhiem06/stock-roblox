@@ -78,6 +78,33 @@
   </div>
 </section>
 
+  <!-- PAYMENT GUIDE CARD -->
+<section class="hero-contact">
+  <div class="payment-card">
+    <h2 class="payment-title">
+      💳 Hướng dẫn thanh toán
+    </h2>
+
+    <p class="payment-note">
+      Thanh toán bằng chuyển khoản hoặc gachthefast
+    </p>
+
+    <div class="payment-method">
+      <div class="payment-row">
+        <span class="label">Ngân hàng MB Bank:</span>
+        <span class="value" id="mbbank">0702403059</span>
+        <button onclick="copyText('mbbank')">📋 Sao chép</button>
+      </div>
+
+      <div class="payment-row">
+        <span class="label">Gachthefast:</span>
+        <span class="value" id="gachthe">0702403059</span>
+        <button onclick="copyText('gachthe')">📋 Sao chép</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- ===== NỘI DUNG GIỮ NGUYÊN 100% ===== -->
 <section class="section">
@@ -123,7 +150,15 @@ function toggleMenu(){
   document.getElementById("mobileMenu").classList.toggle("active");
 }
 </script>
+<script>
+function copyText(id){
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert("Đã sao chép: " + text);
+}
+</script>
 
 </body>
 </html>
+
 
