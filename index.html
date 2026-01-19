@@ -2,12 +2,13 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>SHOP KHIÊM ROBLOX</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taphoarbx.com – Roblox Shop</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ===== HEADER PRO ===== -->
+<!-- HEADER -->
 <header>
   <div class="header-wrap">
     <div class="logo">
@@ -17,18 +18,16 @@
 
     <nav>
       <a class="active" href="index.html">Trang chủ</a>
-
       <div class="nav-dropdown">
         <a href="#">Sản phẩm ▾</a>
         <div class="nav-dropdown-content">
           <a href="robux.html">Robux 120h</a>
           <a href="gamepass.html">Gift Gamepass</a>
-          <a href="bloxfruits.html">Trái Rương</a>
+          <a href="bloxfruits.html">Trái / Rương</a>
           <a href="perm.html">Permanent</a>
           <a href="account.html">Acc Game</a>
         </div>
       </div>
-
       <a href="contact.html">Liên hệ</a>
     </nav>
 
@@ -36,119 +35,84 @@
   </div>
 </header>
 
-<!-- ===== MOBILE MENU ===== -->
+<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <div class="mobile-box">
     <a href="index.html">Trang chủ</a>
     <a href="robux.html">Robux 120h</a>
     <a href="gamepass.html">Gift Gamepass</a>
-    <a href="bloxfruits.html">Trái Rương</a>
+    <a href="bloxfruits.html">Trái / Rương</a>
     <a href="perm.html">Permanent</a>
     <a href="account.html">Acc Game</a>
     <a href="contact.html">Liên hệ</a>
   </div>
 </div>
 
-<!-- ===== INFO CARDS WRAPPER ===== -->
+<!-- INFO CARDS -->
 <section class="info-cards">
 
-  <!-- CONTACT SUPPORT CARD -->
-  <div class="info-card contact-card">
-    <h2 class="contact-title">📞 Contact Support</h2>
-
+  <!-- CONTACT -->
+  <div class="info-card">
+    <h2 class="card-title">📞 Contact Support</h2>
     <div class="contact-actions">
-      <a href="https://www.facebook.com/dongdackhiemGDTG"
-         target="_blank"
-         class="contact-btn facebook">
-        Facebook:
-        <span class="highlight">Đồng Đắc Khiêm</span>
+      <a href="https://www.facebook.com/dongdackhiemGDTG" target="_blank" class="contact-btn facebook">
+        Facebook: <span class="highlight">Đồng Đắc Khiêm</span>
       </a>
-
-      <a href="https://chat.zalo.me/?phone=0702403059"
-         target="_blank"
-         class="contact-btn zalo">
-        Zalo:
-        <span class="highlight">0702403059</span>
+      <a href="https://chat.zalo.me/?phone=0702403059" target="_blank" class="contact-btn zalo">
+        Zalo: <span class="highlight">0702403059</span>
       </a>
     </div>
   </div>
 
-  <!-- PAYMENT GUIDE CARD -->
-  <div class="info-card payment-card">
-    <h2 class="payment-title">💳 Hướng dẫn thanh toán</h2>
+  <!-- PAYMENT -->
+  <div class="info-card">
+    <h2 class="card-title">💳 Hướng dẫn thanh toán</h2>
+    <p class="payment-note">Thanh toán bằng chuyển khoản hoặc gachthefast</p>
 
-    <p class="payment-note">
-      Thanh toán bằng chuyển khoản hoặc gachthefast
-    </p>
+    <div class="payment-row">
+      <span>MB Bank:</span>
+      <b id="mb">0702403059</b>
+      <button onclick="copyText('mb')">Copy</button>
+    </div>
 
-    <div class="payment-method">
-      <div class="payment-row">
-        <span class="label">Ngân hàng MB Bank:</span>
-        <span class="value" id="mbbank">0702403059</span>
-        <button onclick="copyText('mbbank')">📋 Sao chép</button>
-      </div>
-
-      <div class="payment-row">
-        <span class="label">Gachthefast:</span>
-        <span class="value" id="gachthe">0702403059</span>
-        <button onclick="copyText('gachthe')">📋 Sao chép</button>
-      </div>
+    <div class="payment-row">
+      <span>Gachthefast:</span>
+      <b id="gach">0702403059</b>
+      <button onclick="copyText('gach')">Copy</button>
     </div>
   </div>
 
-  <!-- WELCOME CARD -->
-  <div class="info-card product-card">
-    <h2 class="section-title">👋 Chào mừng bạn</h2>
-
+  <!-- WELCOME -->
+  <div class="info-card">
+    <h2 class="card-title">👋 Chào mừng bạn</h2>
     <p>
       Website dùng để xem giá & dịch vụ.<br>
       Vui lòng chọn danh mục phía trên để xem chi tiết.
     </p>
-
-    <hr style="margin:15px 0; opacity:.2">
-
+    <hr>
     <p>
       📌 <b>Hướng dẫn mua hàng:</b><br>
-      • Chọn danh mục bạn cần<br>
-      • Xem giá và mặt hàng<br>
-      • Ấn mua ngay để liên hệ shop để giao dịch
-    </p>
-
-    <p>
-      📞 <b>Liên hệ:</b><br>
-      Facebook:
-      <a href="https://www.facebook.com/dongdackhiemGDTG"
-         target="_blank"
-         class="link-blue">
-         Đồng Đắc Khiêm
-      </a><br>
-      Zalo: 0702 403 059
+      • Chọn danh mục<br>
+      • Xem giá<br>
+      • Nhấn mua để liên hệ shop
     </p>
   </div>
 
 </section>
 
-<!-- ===== FOOTER ===== -->
 <footer>
-  © 2026 KHIÊM ROBLOX SHOP – Không liên kết Roblox
+  © 2026 Taphoarbx.com – Roblox Shop
 </footer>
 
 <script>
 function toggleMenu(){
   document.getElementById("mobileMenu").classList.toggle("active");
 }
-</script>
-<script>
 function copyText(id){
-  const text = document.getElementById(id).innerText;
-  navigator.clipboard.writeText(text);
-  alert("Đã sao chép: " + text);
+  navigator.clipboard.writeText(document.getElementById(id).innerText);
+  alert("Đã sao chép!");
 }
 </script>
 
 </body>
 </html>
-
-
-
-
