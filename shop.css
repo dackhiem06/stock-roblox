@@ -478,6 +478,29 @@ body {
     margin-right: auto;
   }
 }
+/* ===== FIX LỆCH CARD INDEX MOBILE (SAFE FIX) ===== */
+@media (max-width: 768px) {
+
+  /* Reset padding ngoài cho index */
+  .shop-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Grid chiếm full chiều ngang */
+  .home-grid {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Card luôn full – không cho auto lệch */
+  .home-card {
+    width: 100%;
+    margin: 0;
+  }
+
+}
+
 
 
 
