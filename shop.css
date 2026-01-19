@@ -232,3 +232,54 @@ body {
     grid-template-columns: repeat(2,1fr);
   }
 }
+/* ===============================
+   MOBILE OPTIMIZATION
+   =============================== */
+@media (max-width: 768px) {
+  .shop-card h3 {
+    font-size: 15px;
+  }
+
+  .shop-desc {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .shop-price {
+    font-size: 16px;
+  }
+
+  .shop-buy {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .shop-grid {
+    gap: 14px;
+  }
+}
+
+/* ===============================
+   CARD HOVER PRO
+   =============================== */
+.shop-card {
+  transition: all 0.25s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 102, 255, 0.25);
+}
+
+/* ===============================
+   BUTTON PRO EFFECT
+   =============================== */
+.shop-buy {
+  transition: all 0.2s ease;
+}
+
+.shop-buy:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 102, 255, 0.45);
+}
+
