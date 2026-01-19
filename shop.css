@@ -365,4 +365,18 @@ body {
   }
 }
 
+/* ===== FIX LỆCH CARD TRÊN MOBILE (INDEX) ===== */
+@media (max-width: 768px) {
+  .shop-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .home-card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
