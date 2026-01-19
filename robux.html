@@ -1,149 +1,159 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Robux 120h | Taphoarbx.com</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robux 120h | Taphoarbx</title>
+<link rel="stylesheet" href="shop.css">
 </head>
 <body>
 
-<!-- HEADER -->
-<div class="top-header">
-  <div class="container header-flex">
-    <div class="logo">
-      <img src="logo.png" alt="Taphoarbx">
+<header class="shop-header">
+  <div class="shop-header-wrap">
+    <div class="shop-logo">
+      <img src="logo.png">
       <span>Taphoarbx.com</span>
     </div>
 
-    <div class="nav">
+    <nav class="shop-nav">
       <a href="index.html">Trang chủ</a>
-
-      <div class="dropdown">
-        <span>Sản phẩm ▾</span>
-        <div class="dropdown-menu">
+      <div class="shop-dropdown">
+        <a href="#">Sản phẩm ▾</a>
+        <div class="shop-dropdown-content">
           <a href="robux.html">Robux 120h</a>
           <a href="gamepass.html">Gift Gamepass</a>
           <a href="bloxfruits.html">Trái / Rương</a>
-          <a href="perm.html">Permanent</a>
+          <a href="perm.html">Perm</a>
           <a href="account.html">Acc Game</a>
         </div>
       </div>
-
       <a href="contact.html">Liên hệ</a>
-    </div>
+    </nav>
+
+    <div class="shop-menu-btn" onclick="toggleShopMenu()">☰</div>
+  </div>
+</header>
+
+<div class="shop-mobile" id="shopMobile">
+  <div class="shop-mobile-box">
+    <a href="index.html">Trang chủ</a>
+    <a href="robux.html">Robux 120h</a>
+    <a href="gamepass.html">Gift Gamepass</a>
+    <a href="bloxfruits.html">Trái / Rương</a>
+    <a href="perm.html">Perm</a>
+    <a href="account.html">Acc Game</a>
   </div>
 </div>
 
-<!-- TIÊU ĐỀ -->
-<div class="container" style="margin-top:40px">
-  <div class="stack-card">
-    <div class="stack-title payment">💎 Robux 120h</div>
-    <p class="note">Nhận Robux an toàn sau 120 giờ – đã tính thuế Roblox</p>
-  </div>
-</div>
+<section class="shop-page-header">
+  <h1>💎 Robux 120h</h1>
+  <p>Giao nhanh – An toàn – Uy tín</p>
+</section>
 
-<!-- DANH SÁCH ROBUX -->
-<div class="container" style="margin-top:30px">
-
-  <div class="grid">
+<div class="shop-container">
+  <div class="shop-grid">
 
     <!-- CARD -->
-    <div class="card">
+    <div class="shop-card">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Robux_2019_Logo_gold.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Robux_2019_Logo_gold.svg/960px-Robux_2019_Logo_gold.svg.png">
       </div>
       <h3>100 Robux</h3>
-      <div class="price">14.000đ</div>
-      <div class="desc">Gói phổ biến</div>
+      <div class="shop-price">14.000đ</div>
+      <div class="shop-desc">Gói phổ biến</div>
       <a class="buy-btn" target="_blank"
          href="https://www.facebook.com/dongdackhiemGDTG">🛒 Mua ngay</a>
     </div>
 
-    <div class="card">
+    <div class="shop-card">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Robux_2019_Logo_gold.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Robux_2019_Logo_gold.svg/960px-Robux_2019_Logo_gold.svg.png">
       </div>
       <h3>200 Robux</h3>
-      <div class="price">28.000đ</div>
-      <div class="desc">Gói tầm trung</div>
+      <div class="shop-price">28.000đ</div>
+      <div class="shop-desc">Gói tầm trung</div>
       <a class="buy-btn" target="_blank"
          href="https://www.facebook.com/dongdackhiemGDTG">🛒 Mua ngay</a>
     </div>
 
-    <div class="card">
+    <div class="shop-card">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Robux_2019_Logo_gold.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Robux_2019_Logo_gold.svg/960px-Robux_2019_Logo_gold.svg.png">
       </div>
       <h3>500 Robux</h3>
-      <div class="price">69.000đ</div>
-      <div class="desc">Gói tiết kiệm</div>
+      <div class="shop-price">69.000đ</div>
+      <div class="shop-desc">Gói tiết kiệm</div>
       <a class="buy-btn" target="_blank"
          href="https://www.facebook.com/dongdackhiemGDTG">🛒 Mua ngay</a>
     </div>
 
-    <div class="card">
+    <div class="shop-card">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Robux_2019_Logo_gold.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Robux_2019_Logo_gold.svg/960px-Robux_2019_Logo_gold.svg.png">
       </div>
       <h3>1.000 Robux</h3>
-      <div class="price">138.000đ</div>
-      <div class="desc">Gói phổ biến</div>
+      <div class="shop-price">138.000đ</div>
+      <div class="shop-desc">Gói phổ biến</div>
       <a class="buy-btn" target="_blank"
          href="https://www.facebook.com/dongdackhiemGDTG">🛒 Mua ngay</a>
     </div>
 
-    <div class="card">
+    <div class="shop-card">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Robux_2019_Logo_gold.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Robux_2019_Logo_gold.svg/960px-Robux_2019_Logo_gold.svg.png">
       </div>
       <h3>2.000 Robux</h3>
-      <div class="price">276.000đ</div>
-      <div class="desc">Gói lớn</div>
+      <div class="shop-price">276.000đ</div>
+      <div class="shop-desc">Gói lớn</div>
       <a class="buy-btn" target="_blank"
          href="https://www.facebook.com/dongdackhiemGDTG">🛒 Mua ngay</a>
     </div>
 
-    <div class="card">
+    <div class="shop-card">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Robux_2019_Logo_gold.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Robux_2019_Logo_gold.svg/960px-Robux_2019_Logo_gold.svg.png">
       </div>
       <h3>5.000 Robux</h3>
-      <div class="price">689.000đ</div>
-      <div class="desc">Gói lớn</div>
+      <div class="shop-price">689.000đ</div>
+      <div class="shop-desc">Gói lớn</div>
       <a class="buy-btn" target="_blank"
          href="https://www.facebook.com/dongdackhiemGDTG">🛒 Mua ngay</a>
     </div>
 
-    <div class="card">
+    <div class="shop-card">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Robux_2019_Logo_gold.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Robux_2019_Logo_gold.svg/960px-Robux_2019_Logo_gold.svg.png">
       </div>
       <h3>10.000 Robux</h3>
-      <div class="price">1.378.000đ</div>
-      <div class="desc">Gói siêu hời</div>
+      <div class="shop-price">1.378.000đ</div>
+      <div class="shop-desc">Gói siêu hời</div>
       <a class="buy-btn" target="_blank"
          href="https://www.facebook.com/dongdackhiemGDTG">🛒 Mua ngay</a>
     </div>
 
-    <div class="card">
+    <div class="shop-card">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Robux_2019_Logo_gold.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Robux_2019_Logo_gold.svg/960px-Robux_2019_Logo_gold.svg.png">
       </div>
       <h3>Order Robux</h3>
-      <div class="price">Liên hệ</div>
-      <div class="desc">Lẻ Robux – inbox shop</div>
+      <div class="shop-price">Liên hệ</div>
+      <div class="shop-desc">Lẻ Robux – inbox shop</div>
       <a class="buy-btn" target="_blank"
          href="https://www.facebook.com/dongdackhiemGDTG">🛒 Mua ngay</a>
     </div>
-
+    
   </div>
 </div>
 
-<!-- FOOTER -->
-<div class="footer">
-  © 2026 KHIÊM ROBLOX SHOP – Không liên kết Roblox
-</div>
+<footer class="shop-footer">
+  © 2026 Taphoarbx.com
+</footer>
+
+<script>
+function toggleShopMenu() {
+  document.getElementById("shopMobile").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
