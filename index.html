@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="top-header">
   <div class="container header-flex">
     <div class="logo">
@@ -32,51 +31,70 @@
   </div>
 </header>
 
-<!-- MAIN -->
 <main class="container">
 
-  <!-- STACK CARDS -->
-  <section class="stack-cards">
+<section class="stack-cards">
 
-    <!-- IMPORTANT NOTES -->
-    <div class="stack-card">
-      <h2 class="stack-title important">⚠️ Lưu ý quan trọng </h2>
-      <p>Giá ở trang mình là giá chuyển khoản, nếu thẻ cào thì cộng thêm 20% phí</p>
-      <p>Vui lòng inbox cho mình trước khi chuyển khoản / Chuyển khoản nhớ chụp bill</p>
+  <!-- LƯU Ý -->
+  <div class="stack-card">
+    <h2 class="stack-title important">⚠️ Lưu ý quan trọng</h2>
+    <p>Giá hiển thị là giá chuyển khoản.</p>
+    <p>Nếu thanh toán thẻ cào vui lòng cộng thêm phí.</p>
+    <p>Luôn inbox trước khi chuyển khoản & giữ bill giao dịch.</p>
+  </div>
+
+  <!-- THANH TOÁN -->
+  <div class="stack-card">
+    <h2 class="stack-title payment">💳 Hướng dẫn thanh toán</h2>
+    <p class="note">Thanh toán bằng chuyển khoản hoặc GachTheFast</p>
+
+    <div class="pay-row">
+      <span>Ngân hàng MB Bank:</span>
+      <b id="mb">0702403059</b>
+      <button onclick="copyText('mb')">Copy</button>
     </div>
 
-    <!-- PAYMENT -->
-    <div class="stack-card">
-      <h2 class="stack-title payment">💳 Hướng dẫn thanh toán</h2>
-      <p class="note">Thanh toán bằng chuyển khoản hoặc gachthefast</p>
-
-      <div class="pay-row">
-        <span>Ngân hàng MB Bank:</span>
-        <b id="binance">0702403059</b>
-        <button onclick="copyText('binance')">Copy</button>
-      </div>
-
-      <div class="pay-row">
-        <span>Gachthefast:</span>
-        <b id="ltc">0702403059</b>
-        <button onclick="copyText('ltc')">Copy</button>
-      </div>
-      
+    <div class="pay-row">
+      <span>Gachthefast:</span>
+      <b id="gach">0702403059</b>
+      <button onclick="copyText('gach')">Copy</button>
     </div>
+  </div>
 
-    <!-- CONTACT -->
-    <div class="stack-card">
-      <h2 class="stack-title contact">📞 Thông tin hỗ trợ</h2>
+  <!-- CONTACT -->
+  <div class="stack-card">
+    <h2 class="stack-title contact">📞 Thông tin hỗ trợ</h2>
 
-      <div class="contact-grid">
-        <div class="contact-pill">💬 Facebook: Đồng Đắc Khiêm</div>
-        <div class="contact-pill">🎮 Zalo: 0702403059</div>
-        <div class="contact-pill">🖥️ Discord: dackhiem</div>
-        <div class="contact-pill">✈️ Discord Sever</div>
-      </div>
+    <div class="contact-grid">
+
+      <a class="contact-pill facebook"
+         href="https://www.facebook.com/dongdackhiemGDTG"
+         target="_blank">
+        💬 Facebook: <span>Đồng Đắc Khiêm</span>
+      </a>
+
+      <a class="contact-pill zalo"
+         href="https://chat.zalo.me/?phone=0702403059"
+         target="_blank">
+        🎮 Zalo: <span>0702403059</span>
+      </a>
+
+      <a class="contact-pill discord"
+         href="https://discord.com/users/927036058636533800"
+         target="_blank">
+        🖥️ Discord: <span>dackhiem</span>
+      </a>
+
+      <a class="contact-pill server"
+         href="https://discord.gg/YGjFatdaRd"
+         target="_blank">
+        ✈️ Discord Server
+      </a>
+
     </div>
+  </div>
 
-  </section>
+</section>
 
 </main>
 
@@ -94,4 +112,3 @@ function copyText(id){
 
 </body>
 </html>
-
