@@ -1,4 +1,4 @@
-/* ================= RESET ================= */
+/* ===== RESET ===== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,14 +7,14 @@
 }
 
 body {
-  background: #f4f7ff;
-  color: #222;
+  background: #f5f7fb;
+  color: #1f2937;
 }
 
-/* ================= HEADER ================= */
+/* ===== HEADER (NHẸ – GIỐNG INDEX) ===== */
 .shop-header {
-  background: #0a58ff;
-  color: #fff;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -33,18 +33,23 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-weight: bold;
+  font-weight: 700;
+  color: #1f2937;
 }
 
 .shop-logo img {
-  height: 36px;
+  height: 34px;
 }
 
 .shop-nav a {
-  color: #fff;
+  color: #1f2937;
   text-decoration: none;
   margin: 0 10px;
   font-weight: 500;
+}
+
+.shop-nav a:hover {
+  color: #2563eb;
 }
 
 .shop-dropdown {
@@ -55,25 +60,29 @@ body {
 .shop-dropdown-content {
   display: none;
   position: absolute;
-  background: #fff;
+  background: #ffffff;
   min-width: 190px;
-  top: 28px;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.15);
-  z-index: 99;
+  top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  overflow: hidden;
 }
 
 .shop-dropdown-content a {
   display: block;
-  padding: 10px 14px;
-  color: #222;
+  padding: 12px 14px;
+  color: #1f2937;
+}
+
+.shop-dropdown-content a:hover {
+  background: #f1f5ff;
 }
 
 .shop-dropdown:hover .shop-dropdown-content {
   display: block;
 }
 
-/* ================= MOBILE MENU ================= */
+/* ===== MOBILE MENU ===== */
 .shop-menu-btn {
   display: none;
   font-size: 26px;
@@ -83,7 +92,7 @@ body {
 .shop-mobile {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.6);
+  background: rgba(0,0,0,.45);
   display: none;
   z-index: 1000;
 }
@@ -95,7 +104,7 @@ body {
 .shop-mobile-box {
   width: 260px;
   height: 100%;
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
 }
 
@@ -103,59 +112,59 @@ body {
   display: block;
   margin-bottom: 14px;
   text-decoration: none;
-  color: #222;
+  color: #1f2937;
   font-weight: 500;
 }
 
-/* ================= PAGE HEADER ================= */
+/* ===== PAGE HEADER ===== */
 .shop-page-header {
-  background: linear-gradient(135deg,#0a58ff,#4f7dff);
-  color: #fff;
-  text-align: center;
-  padding: 34px 16px;
+  max-width: 1200px;
+  margin: 30px auto 0;
+  padding: 0 16px;
 }
 
 .shop-page-header h1 {
   font-size: 26px;
+  font-weight: 700;
 }
 
 .shop-page-header p {
+  color: #6b7280;
   margin-top: 6px;
-  opacity: .9;
 }
 
-/* ================= CONTAINER ================= */
+/* ===== CONTAINER ===== */
 .shop-container {
   max-width: 1200px;
   margin: auto;
-  padding: 30px 16px;
+  padding: 24px 16px 40px;
 }
 
-/* ================= GRID ================= */
+/* ===== GRID ===== */
 .shop-grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 20px;
 }
 
-/* ================= CARD ================= */
+/* ===== CARD (GIỐNG INDEX) ===== */
 .shop-card {
-  background: #fff;
-  border-radius: 14px;
+  background: #ffffff;
+  border-radius: 16px;
   padding: 16px;
   text-align: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,.06);
   transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .shop-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 32px rgba(0,0,0,.15);
+  box-shadow: 0 16px 36px rgba(0,0,0,.12);
 }
 
 .shop-card img {
   width: 100%;
-  max-height: 140px;
+  max-height: 130px;
   object-fit: contain;
   margin-bottom: 10px;
 }
@@ -166,42 +175,44 @@ body {
 }
 
 .shop-price {
-  font-weight: bold;
-  color: #0a58ff;
+  font-weight: 700;
+  color: #2563eb;
   margin-bottom: 6px;
 }
 
 .shop-desc {
   font-size: 13px;
-  color: #666;
-  margin-bottom: 10px;
+  color: #6b7280;
+  margin-bottom: 12px;
 }
 
+/* ===== BUTTON ===== */
 .shop-buy {
   display: inline-block;
-  background: #0a58ff;
-  color: #fff;
-  padding: 10px 14px;
-  border-radius: 8px;
+  background: #3b82f6;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 10px;
   text-decoration: none;
-  font-weight: bold;
-  transition: background .2s;
+  font-weight: 600;
+  transition: background .2s ease, transform .2s ease;
 }
 
 .shop-buy:hover {
-  background: #0848d9;
+  background: #2563eb;
+  transform: translateY(-1px);
 }
 
-/* ================= FOOTER ================= */
+/* ===== FOOTER ===== */
 .shop-footer {
-  background: #0a58ff;
-  color: #fff;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #6b7280;
   text-align: center;
   padding: 14px;
-  margin-top: 40px;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .shop-grid {
     grid-template-columns: repeat(3,1fr);
