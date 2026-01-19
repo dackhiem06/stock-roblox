@@ -163,8 +163,95 @@ footer {
   box-shadow: 0 0 8px rgba(24,119,242,0.8);
   vertical-align: middle;
 }
+/* =========================
+   📱 MOBILE OPTIMIZATION
+   ========================= */
+@media (max-width: 768px) {
 
+  /* HEADER */
+  header {
+    padding: 18px 12px;
+  }
 
+  header h1 {
+    font-size: 22px;
+  }
 
+  header p {
+    font-size: 13px;
+  }
 
+  /* NAV BAR */
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+  }
 
+  nav a {
+    flex: 1 1 calc(50% - 8px);
+    text-align: center;
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  /* CONTAINER */
+  .container {
+    margin: 24px auto;
+    padding: 0 12px;
+  }
+
+  /* GRID CARD */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  /* CARD */
+  .card {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+
+  /* IMAGE */
+  .card-img {
+    height: 100px;
+  }
+
+  .card-img img {
+    max-height: 70px;
+  }
+
+  /* BUTTON */
+  .buy-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 12px;
+    padding: 14px;
+  }
+}
+
+/* 📱 VERY SMALL PHONE */
+@media (max-width: 420px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
