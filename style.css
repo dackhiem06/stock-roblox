@@ -64,9 +64,10 @@ body{
   left:0;
   background:#fff;
   box-shadow:0 8px 25px rgba(0,0,0,.15);
-  border-radius:10px;
+  border-radius:12px;
   overflow:hidden;
   min-width:180px;
+  z-index:10;
 }
 
 .dropdown-menu a{
@@ -94,7 +95,7 @@ body{
 .stack-card{
   background:#fff;
   border-radius:18px;
-  padding:24px 28px;
+  padding:26px;
   box-shadow:0 10px 30px rgba(0,0,0,.12);
   transition:.3s;
 }
@@ -114,10 +115,6 @@ body{
 .stack-title.payment{color:#ff6a00}
 .stack-title.contact{color:#ff5c5c}
 
-.stack-card p{
-  margin-bottom:10px;
-}
-
 .note{
   color:#007bff;
   font-size:14px;
@@ -135,7 +132,6 @@ body{
 
 .pay-row b{
   color:#18a058;
-  word-break:break-all;
 }
 
 .pay-row button{
@@ -147,31 +143,41 @@ body{
   cursor:pointer;
 }
 
-.auto-btn{
-  margin-top:14px;
-  background:#0099c8;
-  color:#fff;
-  padding:12px;
-  border-radius:12px;
-  text-align:center;
-  font-weight:600;
-}
-
 /* CONTACT */
 .contact-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:14px;
+  gap:16px;
 }
 
 .contact-pill{
-  padding:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  padding:16px;
   border-radius:999px;
   color:#fff;
   font-weight:600;
-  text-align:center;
-  background:linear-gradient(135deg,#1e88e5,#ff7043);
+  text-decoration:none;
+  transition:.3s;
+  box-shadow:0 6px 18px rgba(0,0,0,.18);
 }
+
+.contact-pill span{
+  color:#e3f2fd;
+}
+
+.contact-pill:hover{
+  transform:translateY(-5px) scale(1.03);
+  box-shadow:0 18px 40px rgba(0,0,0,.35);
+}
+
+/* MÀU RIÊNG */
+.facebook{background:linear-gradient(135deg,#1877f2,#42a5f5)}
+.zalo{background:linear-gradient(135deg,#00b0ff,#29b6f6)}
+.discord{background:linear-gradient(135deg,#5865f2,#7986cb)}
+.server{background:linear-gradient(135deg,#ff7043,#ff8a65)}
 
 /* FOOTER */
 .footer{
@@ -184,8 +190,5 @@ body{
 @media(max-width:768px){
   .contact-grid{
     grid-template-columns:1fr;
-  }
-  .nav{
-    gap:12px;
   }
 }
