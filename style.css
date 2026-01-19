@@ -268,11 +268,6 @@ footer{
 }
 /* ===== PAYMENT GUIDE CARD ===== */
 
-.payment-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,.18);
-}
-
 .payment-title {
   font-size: 24px;
   font-weight: 700;
@@ -345,32 +340,6 @@ footer{
   }
 }
 
-/* ===== INFO CARDS LAYOUT ===== */
-.info-cards{
-  max-width:1200px;
-  margin:60px auto;
-  padding:0 16px;
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap:24px;
-}
-
-/* CARD CHUNG */
-.info-card{
-  background:#fff;
-  border-radius:18px;
-  padding:26px 24px;
-  border:1px solid #e5e7eb;
-  box-shadow:0 10px 30px rgba(0,0,0,.08);
-  transition:all .3s ease;
-}
-
-/* HOVER DẬP NỔI */
-.info-card:hover{
-  transform: translateY(-8px);
-  box-shadow:0 22px 45px rgba(0,0,0,.18);
-}
-
 /* LINK BLUE */
 .link-blue{
   color:#2563eb;
@@ -399,5 +368,183 @@ footer{
   transform: translateY(-8px);
   box-shadow:0 22px 45px rgba(0,0,0,.18);
 }
+/* ================= INFO CARDS LAYOUT (FIX 3 CARD NGANG) ================= */
+
+.info-cards{
+  max-width:1200px;
+  margin:60px auto;
+  padding:0 16px;
+
+  display:grid;
+  grid-template-columns: repeat(3, 1fr); /* ÉP 3 CARD NGANG */
+  gap:28px;
+}
+
+/* CARD CHUNG */
+.info-card{
+  background:#ffffff;
+  border-radius:18px;
+  padding:26px 24px;
+
+  border:1px solid #e5e7eb;
+  box-shadow:0 8px 22px rgba(0,0,0,.08);
+
+  transition: all .35s ease;
+  display:flex;
+  flex-direction:column;
+}
+
+/* HOVER DẬP NỔI (GIỐNG SIEUTHIROBLOX) */
+.info-card:hover{
+  transform: translateY(-10px);
+  box-shadow:0 25px 50px rgba(0,0,0,.2);
+}
+
+/* ================= CONTACT CARD ================= */
+
+.contact-title{
+  font-size:24px;
+  font-weight:700;
+  margin-bottom:20px;
+  color:#0f172a;
+}
+
+.contact-actions{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+}
+
+.contact-btn{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:14px 18px;
+  border-radius:999px;
+
+  font-size:16px;
+  font-weight:600;
+  text-decoration:none;
+  color:#fff;
+
+  transition:.3s;
+}
+
+.contact-btn.facebook{
+  background:linear-gradient(135deg,#1877f2,#60a5fa);
+}
+
+.contact-btn.zalo{
+  background:linear-gradient(135deg,#0068ff,#4f9cff);
+}
+
+.contact-btn:hover{
+  opacity:.95;
+  transform:scale(1.04);
+}
+
+.contact-btn .highlight{
+  margin-left:4px;
+  color:#dbeafe;
+  font-weight:700;
+}
+
+/* ================= PAYMENT CARD ================= */
+
+.payment-title{
+  font-size:24px;
+  font-weight:700;
+  color:#ef4444;
+  margin-bottom:8px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.payment-note{
+  font-size:14px;
+  color:#2563eb;
+  margin-bottom:20px;
+}
+
+.payment-method{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.payment-row{
+  display:grid;
+  grid-template-columns:180px 1fr auto;
+  align-items:center;
+  gap:12px;
+
+  padding:14px 16px;
+  border-radius:12px;
+
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+}
+
+.payment-row .label{
+  font-weight:600;
+  color:#374151;
+}
+
+.payment-row .value{
+  font-weight:700;
+  color:#16a34a;
+}
+
+.payment-row button{
+  background:linear-gradient(135deg,#2563eb,#60a5fa);
+  border:none;
+  color:#fff;
+
+  padding:8px 14px;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.payment-row button:hover{
+  transform:scale(1.05);
+  opacity:.9;
+}
+
+/* ================= WELCOME CARD ================= */
+
+.section-title{
+  font-size:22px;
+  font-weight:700;
+  color:#2563eb;
+  margin-bottom:12px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1024px){
+  .info-cards{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:640px){
+  .info-cards{
+    grid-template-columns:1fr;
+  }
+
+  .payment-row{
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  .payment-row button{
+    width:100%;
+  }
+}
+
 
 
