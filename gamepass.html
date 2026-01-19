@@ -1,137 +1,80 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gift Gamepass | Taphoarbx</title>
+  <meta charset="UTF-8">
+  <title>Gamepass Roblox | Taphoarbx.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- CSS RIÊNG CHO SHOP -->
-<link rel="stylesheet" href="shop.css">
+  <!-- CSS CHUẨN SHOP (GIỐNG ROBUX) -->
+  <link rel="stylesheet" href="shop.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- ===== HEADER ===== -->
-<header class="shop-header">
-  <div class="shop-header-wrap">
-    <div class="shop-logo">
-      <img src="logo.png" alt="Logo">
-      <span>Taphoarbx.com</span>
+<header class="header">
+  <div class="container header-flex">
+    <div class="logo">
+      <a href="index.html">Taphoarbx<span>.com</span></a>
     </div>
 
-    <nav class="shop-nav">
-      <a href="index.html">Trang chủ</a>
-
-      <div class="shop-dropdown">
-        <a href="#">Sản phẩm ▾</a>
-        <div class="shop-dropdown-content">
-          <a href="robux.html">Robux 120h</a>
-          <a href="gamepass.html">Gift Gamepass</a>
-          <a href="bloxfruits.html">Blox Fruits</a>
-          <a href="perm.html">Perm</a>
-          <a href="account.html">Acc Game</a>
-        </div>
-      </div>
-
-      <a href="contact.html">Liên hệ</a>
+    <nav class="nav">
+      <a href="robux.html">Robux</a>
+      <a href="gamepass.html" class="active">Gamepass</a>
+      <a href="bloxfruits.html">Blox Fruits</a>
+      <a href="perm.html">Permanent</a>
+      <a href="account.html">Acc Game</a>
     </nav>
-
-    <div class="shop-menu-btn" onclick="toggleShopMenu()">☰</div>
   </div>
 </header>
 
-<!-- ===== MOBILE MENU ===== -->
-<div class="shop-mobile" id="shopMobile">
-  <div class="shop-mobile-box">
-    <a href="index.html">Trang chủ</a>
-    <a href="robux.html">Robux 120h</a>
-    <a href="gamepass.html">Gift Gamepass</a>
-    <a href="bloxfruits.html">Blox Fruits</a>
-    <a href="perm.html">Perm</a>
-    <a href="account.html">Acc Game</a>
-  </div>
-</div>
+<!-- ===== MAIN ===== -->
+<main class="container">
+  <h1 class="page-title">🎁 Gamepass Roblox</h1>
 
-<!-- ===== PAGE TITLE ===== -->
-<div class="shop-page-header">
-  <h1>🎁 Gift Gamepass Roblox</h1>
-  <p>Tặng trực tiếp – An toàn – Không cần mật khẩu</p>
-</div>
+  <!-- ===== PRODUCT GRID ===== -->
+  <div class="product-grid">
 
-<!-- ===== PRODUCT LIST ===== -->
-<div class="shop-container">
-  <div class="shop-grid">
+    <!-- ====== GIỮ NGUYÊN CÁC SẢN PHẨM BẠN ĐÃ CÓ ====== -->
 
-    <!-- ITEM -->
-    <div class="shop-card">
-      <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/3/35/StatReset.png" alt="">
-      <h3>Stat Reset</h3>
-      <div class="shop-price">10.000đ</div>
-      <a href="https://www.facebook.com/dongdackhiemGDTG" target="_blank" class="shop-buy">🛒 Mua ngay</a>
-    </div>
-    
-    <div class="shop-card">
-      <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/3/3a/BadgeBossDrops.png" alt="">
-      <h3>2x Boss Drop Chance</h3>
-      <div class="shop-price">42.000đ</div>
-      <a href="https://www.facebook.com/dongdackhiemGDTG" target="_blank" class="shop-buy">🛒 Mua ngay</a>
+    <!-- Ví dụ 1 -->
+    <div class="product-card">
+      <img src="LINK_ẢNH_GAMEPASS_1" alt="Gamepass">
+      <h3>Tên Gamepass 1</h3>
+      <p class="price">Giá: XXX.000đ</p>
+      <a class="buy-btn"
+         href="https://www.facebook.com/dongdackhiemGDTG"
+         target="_blank">
+        Mua ngay
+      </a>
     </div>
 
-    <div class="shop-card">
-      <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/f/fa/BadgeBoats.png" alt="">
-      <h3>Fast Boat</h3>
-      <div class="shop-price">42.000đ</div>
-      <a href="https://www.facebook.com/dongdackhiemGDTG" target="_blank" class="shop-buy">🛒 Mua ngay</a>
-    </div>
-    
-<div class="shop-card">
-      <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/6/6a/BadgeFruitStorage.png" alt="">
-      <h3>+1 Fruit Storage</h3>
-      <div class="shop-price">48.000đ</div>
-      <a href="https://www.facebook.com/dongdackhiemGDTG" target="_blank" class="shop-buy">🛒 Mua ngay</a>
-    </div>
-    
-    <div class="shop-card">
-      <img src="http://static.wikia.nocookie.net/roblox-blox-piece/images/c/cf/BadgeMoneyx2.png" alt="">
-      <h3>2x Money</h3>
-      <div class="shop-price">54.000đ</div>
-      <a href="https://www.facebook.com/dongdackhiemGDTG" target="_blank" class="shop-buy">🛒 Mua ngay</a>
+    <!-- Ví dụ 2 -->
+    <div class="product-card">
+      <img src="LINK_ẢNH_GAMEPASS_2" alt="Gamepass">
+      <h3>Tên Gamepass 2</h3>
+      <p class="price">Giá: XXX.000đ</p>
+      <a class="buy-btn"
+         href="https://www.facebook.com/dongdackhiemGDTG"
+         target="_blank">
+        Mua ngay
+      </a>
     </div>
 
-    <div class="shop-card">
-      <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/1/16/BadgeMasteryx2.png" alt="">
-      <h3>2x Mastery</h3>
-      <div class="shop-price">54.000đ</div>
-      <a href="https://www.facebook.com/dongdackhiemGDTG" target="_blank" class="shop-buy">🛒 Mua ngay</a>
-    </div>
-
-    <div class="shop-card">
-      <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/7/7f/BadgeDarkBlade.png" alt="">
-      <h3>Dark Blade</h3>
-      <div class="shop-price">144.000đ</div>
-      <a href="https://www.facebook.com/dongdackhiemGDTG" target="_blank" class="shop-buy">🛒 Mua ngay</a>
-    </div>
-
-    <div class="shop-card">
-      <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/9/98/BadgeFruitNotifier.png" alt="">
-      <h3>Fruit Notifier</h3>
-      <div class="shop-price">324.000đ</div>
-      <a href="https://www.facebook.com/dongdackhiemGDTG" target="_blank" class="shop-buy">🛒 Mua ngay</a>
-    </div>
-        
+    <!-- ⚠️ CÁC SẢN PHẨM KHÁC:
+         👉 BẠN DÁN NGUYÊN KHỐI SẢN PHẨM CŨ CỦA BẠN VÀO ĐÂY
+         👉 KHÔNG CẦN SỬA GÌ KHÁC
+    -->
 
   </div>
-</div>
+</main>
 
 <!-- ===== FOOTER ===== -->
-<footer class="shop-footer">
-  © 2026 Taphoarbx.com – All rights reserved
+<footer class="footer">
+  <p>© 2026 Taphoarbx.com – Roblox Shop Uy Tín</p>
 </footer>
-
-<script>
-function toggleShopMenu() {
-  document.getElementById("shopMobile").classList.toggle("active");
-}
-</script>
 
 </body>
 </html>
