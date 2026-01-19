@@ -2,108 +2,104 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>SHOP KHIÊM ROBLOX</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acc Game | Taphoarbx</title>
+
+<!-- CSS RIÊNG CHO SHOP -->
+<link rel="stylesheet" href="shop.css">
 </head>
 <body>
-  <header>
-  <div class="header-wrap">
-    <div class="logo">
-      <img src="logo.png">
+
+<!-- ===== HEADER ===== -->
+<header class="shop-header">
+  <div class="shop-header-wrap">
+    <div class="shop-logo">
+      <img src="logo.png" alt="Logo">
       <span>Taphoarbx.com</span>
     </div>
 
-    <nav>
+    <nav class="shop-nav">
       <a href="index.html">Trang chủ</a>
-      <div class="nav-dropdown">
+
+      <div class="shop-dropdown">
         <a href="#">Sản phẩm ▾</a>
-        <div class="nav-dropdown-content">
+        <div class="shop-dropdown-content">
           <a href="robux.html">Robux 120h</a>
           <a href="gamepass.html">Gift Gamepass</a>
-          <a href="bloxfruits.html">Trái / Rương</a>
+          <a href="bloxfruits.html">Blox Fruits</a>
           <a href="perm.html">Perm</a>
           <a href="account.html">Acc Game</a>
         </div>
       </div>
+
       <a href="contact.html">Liên hệ</a>
     </nav>
 
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="shop-menu-btn" onclick="toggleShopMenu()">☰</div>
   </div>
 </header>
 
-<div class="mobile-menu" id="mobileMenu">
-  <div class="mobile-box">
+<!-- ===== MOBILE MENU ===== -->
+<div class="shop-mobile" id="shopMobile">
+  <div class="shop-mobile-box">
     <a href="index.html">Trang chủ</a>
     <a href="robux.html">Robux 120h</a>
     <a href="gamepass.html">Gift Gamepass</a>
-    <a href="bloxfruits.html">Trái / Rương</a>
+    <a href="bloxfruits.html">Blox Fruits</a>
     <a href="perm.html">Perm</a>
     <a href="account.html">Acc Game</a>
-    <a href="contact.html">Liên hệ</a>
   </div>
 </div>
 
-<div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
-
-<header>
-  <h1>🧾 Acc Game</h1>
-  <p>Acc sạch – Trắng thông tin – An toàn</p>
-</header>
-<div class="mobile-menu" id="mobileMenu">
-<nav>
-  <a href="index.html">Trang chủ</a>
-  <a href="robux.html">Robux 120h</a>
-  <a href="gamepass.html">Gift Gamepass</a>
-  <a href="bloxfruits.html">Trái Rương</a>
-  <a href="perm.html">Permanent</a>
-  <a class="active" href="account.html">Acc Game</a>
-  <a href="contact.html">Liên hệ</a>
-</nav>
+<!-- ===== PAGE TITLE ===== -->
+<div class="shop-page-header">
+  <h1>👤 Acc Game</h1>
+  <p>Tài khoản game – Giao ngay – Bảo mật</p>
 </div>
-<div class="container">
-  <div class="grid">
 
-    <div class="card">
+<!-- ===== PRODUCT LIST ===== -->
+<div class="shop-container">
+  <div class="shop-grid">
+
+  <div class="shop-card">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Roblox_Logo_2022.svg">
       <h3>Clone Roblox</h3>
-      <div class="price">100đ</div>
-      <div class="desc">1 acc / 1 IP – Global</div>
-      <a class="buy-btn" href="https://www.facebook.com/dongdackhiemGDTG" target="_blank">🛒 Mua ngay</a>
+      <div class="shop-price">100đ</div>
+      <div class="shop-desc">1 acc / 1 IP – Global</div>
+      <a class="shop-buy" href="https://www.facebook.com/dongdackhiemGDTG" target="_blank">🛒 Mua ngay</a>
     </div>
 
-    <div class="card">
+    <div class="shop-card">
       <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/86/Godhuman.png">
       <h3>Acc Blox Fruits Max Level</h3>
-      <div class="price">10.000đ</div>
-      <div class="desc">Lv 2800 + Godhuman</div>
-      <a class="buy-btn" href="https://www.facebook.com/dongdackhiemGDTG" target="_blank">🛒 Mua ngay</a>
+      <div class="shop-price">10.000đ</div>
+      <div class="shop-desc">Lv 2800 + Godhuman</div>
+      <a class="shop-buy" href="https://www.facebook.com/dongdackhiemGDTG" target="_blank">🛒 Mua ngay</a>
     </div>
 
-    <div class="card">
+    <div class="shop-card">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Roblox_Logo_2022.svg">
       <h3>Acc Theo Yêu Cầu</h3>
-      <div class="price">Liên hệ</div>
-      <div class="desc">Inbox báo giá chi tiết</div>
-      <a class="buy-btn" href="https://www.facebook.com/dongdackhiemGDTG" target="_blank">🛒 Mua ngay</a>
+      <div class="shop-price">Liên hệ</div>
+      <div class="shop-desc">Inbox báo giá chi tiết</div>
+      <a class="shop-buy" href="https://www.facebook.com/dongdackhiemGDTG" target="_blank">🛒 Mua ngay</a>
     </div>
+
+  
 
   </div>
 </div>
 
-<footer>© 2026 KHIÊM ROBLOX SHOP</footer>
+<!-- ===== FOOTER ===== -->
+<footer class="shop-footer">
+  © 2026 Taphoarbx.com – All rights reserved
+</footer>
 
 <script>
-function toggleMenu() {
-  document.getElementById("mobileMenu").classList.toggle("show");
+function toggleShopMenu() {
+  document.getElementById("shopMobile").classList.toggle("active");
 }
 </script>
 
 </body>
 </html>
-
-
-
-
-
-
