@@ -234,4 +234,112 @@ body {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+}
+/* ===============================
+   HOME PAGE (INDEX)
+   =============================== */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 20px;
+}
+
+.home-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  transition: .25s;
+}
+
+.home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.home-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--brand);
+}
+
+.home-card p {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.home-card hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 10px 0;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* PAYMENT ROW */
+.pay-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.pay-row button {
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pay-row button:hover {
+  background: #2563eb;
+}
+
+.highlight {
+  color: #16a34a;
+}
+
+/* CONTACT BUTTONS */
+.contact-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .2s;
+}
+
+.contact-btn span {
+  color: #e0f2fe;
+  font-weight: 600;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.fb { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+.zalo { background: linear-gradient(90deg, #0ea5e9, #38bdf8); }
+.discord { background: linear-gradient(90deg, #6366f1, #818cf8); }
+.server { background: linear-gradient(90deg, #06b6d4, #22d3ee); }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
 }
