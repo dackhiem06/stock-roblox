@@ -365,4 +365,41 @@ footer{
   }
 }
 
+/* ===== INFO CARDS LAYOUT ===== */
+.info-cards{
+  max-width:1200px;
+  margin:60px auto;
+  padding:0 16px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap:24px;
+}
+
+/* CARD CHUNG */
+.info-card{
+  background:#fff;
+  border-radius:18px;
+  padding:26px 24px;
+  border:1px solid #e5e7eb;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  transition:all .3s ease;
+}
+
+/* HOVER DẬP NỔI */
+.info-card:hover{
+  transform: translateY(-8px);
+  box-shadow:0 22px 45px rgba(0,0,0,.18);
+}
+
+/* LINK BLUE */
+.link-blue{
+  color:#2563eb;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.link-blue:hover{
+  text-decoration:underline;
+}
+
 
