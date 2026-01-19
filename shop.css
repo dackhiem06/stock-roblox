@@ -361,19 +361,29 @@ body {
   }
 }
 
-/* ===== FIX LỆCH CARD TRÊN MOBILE (INDEX) ===== */
+/* ===== FIX LỆCH CARD INDEX TRÊN MOBILE (CHUẨN) ===== */
 @media (max-width: 768px) {
+
+  /* container full ngang như page-title */
   .shop-container {
-    padding-left: 14px;
-    padding-right: 14px;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
+  /* grid chiếm đủ chiều ngang */
+  .home-grid {
+    width: 100%;
+  }
+
+  /* mỗi card luôn căn giữa */
   .home-card {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 }
+
+
 
 
 
