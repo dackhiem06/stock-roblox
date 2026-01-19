@@ -199,3 +199,81 @@ footer{
   nav{display:none;}
   .menu-btn{display:block;}
 }
+/* ===== HERO CONTACT SUPPORT ===== */
+.hero-contact {
+  background: #f3f6f9;
+  padding: 60px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.contact-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* Facebook */
+.contact-btn.facebook {
+  background: linear-gradient(135deg, #1877f2, #4ea1ff);
+}
+
+/* Zalo */
+.contact-btn.zalo {
+  background: linear-gradient(135deg, #0068ff, #4fa3ff);
+}
+
+/* Highlight text */
+.contact-btn .highlight {
+  color: #dbeafe;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-title {
+    font-size: 20px;
+  }
+}
+
