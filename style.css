@@ -1,285 +1,237 @@
-*{
-  box-sizing:border-box;
-  font-family:Arial, Helvetica, sans-serif;
+/* =========================
+   RESET & BASE
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-  margin:0;
-  background:#f4f6f8;
-  color:#333;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+  line-height: 1.5;
 }
 
-/* HEADER */
-.top-header{
-  background:#fff;
-  border-bottom:1px solid #ddd;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.container{
-  max-width:1200px;
-  margin:auto;
-  padding:0 16px;
+/* =========================
+   TOP BAR
+   ========================= */
+.topbar {
+  background: #0d6efd;
+  color: #fff;
+  font-size: 13px;
 }
 
-.header-flex{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  height:64px;
+.topbar-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-weight:bold;
-  color:#007bff;
+/* =========================
+   HEADER (CHUẨN ROBUX)
+   ========================= */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.logo img{
-  height:32px;
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav{
-  display:flex;
-  align-items:center;
-  gap:20px;
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0d6efd;
 }
 
-.nav a, .nav span{
-  text-decoration:none;
-  color:#333;
-  font-weight:600;
-  cursor:pointer;
+/* MENU */
+.nav {
+  display: flex;
+  gap: 18px;
 }
 
-.dropdown{
-  position:relative;
+.nav a {
+  font-size: 15px;
+  color: #333;
+  padding: 6px 2px;
+  position: relative;
 }
 
-.dropdown-menu{
-  display:none;
-  position:absolute;
-  top:100%;
-  left:0;
-  background:#fff;
-  box-shadow:0 8px 25px rgba(0,0,0,.15);
-  border-radius:12px;
-  overflow:hidden;
-  min-width:180px;
-  z-index:10;
+.nav a:hover {
+  color: #0d6efd;
 }
 
-.dropdown-menu a{
-  display:block;
-  padding:12px 16px;
-  color:#333;
+.nav a.active {
+  color: #0d6efd;
+  font-weight: 600;
 }
 
-.dropdown-menu a:hover{
-  background:#f0f0f0;
+.nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #0d6efd;
 }
 
-.dropdown:hover .dropdown-menu{
-  display:block;
+/* =========================
+   PAGE TITLE (SHOP)
+   ========================= */
+.page-title {
+  max-width: 1200px;
+  margin: 24px auto 12px;
+  padding: 0 12px;
 }
 
-/* STACK CARDS */
-.stack-cards{
-  margin:40px auto;
-  display:flex;
-  flex-direction:column;
-  gap:28px;
+.page-title h1 {
+  font-size: 22px;
+  font-weight: 700;
 }
 
-.stack-card{
-  background:#fff;
-  border-radius:18px;
-  padding:26px;
-  box-shadow:0 10px 30px rgba(0,0,0,.12);
-  transition:.3s;
+/* =========================
+   PRODUCT GRID (CHUẨN ROBUX)
+   ========================= */
+.product-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
 
-.stack-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 22px 55px rgba(0,0,0,.25);
+/* =========================
+   PRODUCT CARD
+   ========================= */
+.product-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.stack-title{
-  font-size:22px;
-  font-weight:700;
-  margin-bottom:14px;
+.product-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
 }
 
-.stack-title.important{color:#ff4d4f}
-.stack-title.payment{color:#ff6a00}
-.stack-title.contact{color:#ff5c5c}
-
-.note{
-  color:#007bff;
-  font-size:14px;
+/* IMAGE */
+.product-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 
-/* PAYMENT */
-.pay-row{
-  display:grid;
-  grid-template-columns:1fr auto auto;
-  gap:14px;
-  align-items:center;
-  padding:12px 0;
-  border-top:1px solid #eee;
+/* NAME */
+.product-item h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
 }
 
-.pay-row b{
-  color:#18a058;
+/* PRICE */
+.price {
+  color: #e53935;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-.pay-row button{
-  background:#00a3d9;
-  color:#fff;
-  border:none;
-  padding:8px 14px;
-  border-radius:10px;
-  cursor:pointer;
+/* BUY BUTTON */
+.buy-btn {
+  margin-top: auto;
+  background: #0d6efd;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background .2s ease;
 }
 
-/* CONTACT */
-.contact-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:16px;
+.buy-btn:hover {
+  background: #0b5ed7;
 }
 
-.contact-pill{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:6px;
-  padding:16px;
-  border-radius:999px;
-  color:#fff;
-  font-weight:600;
-  text-decoration:none;
-  transition:.3s;
-  box-shadow:0 6px 18px rgba(0,0,0,.18);
+/* =========================
+   INDEX – CARD / CONTENT
+   ========================= */
+.home-grid {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
-.contact-pill span{
-  color:#e3f2fd;
+.home-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.contact-pill:hover{
-  transform:translateY(-5px) scale(1.03);
-  box-shadow:0 18px 40px rgba(0,0,0,.35);
+.home-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
 }
 
-/* MÀU RIÊNG */
-.facebook{background:linear-gradient(135deg,#1877f2,#42a5f5)}
-.zalo{background:linear-gradient(135deg,#00b0ff,#29b6f6)}
-.discord{background:linear-gradient(135deg,#5865f2,#7986cb)}
-.server{background:linear-gradient(135deg,#ff7043,#ff8a65)}
-
-/* FOOTER */
-.footer{
-  text-align:center;
-  padding:20px;
-  color:#777;
+/* =========================
+   FOOTER
+   ========================= */
+.footer {
+  margin-top: 40px;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  padding: 14px;
+  font-size: 13px;
+  color: #555;
 }
 
-/* MOBILE */
-@media(max-width:768px){
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
-}
-/* ============================= */
-/* TRANG ROBUX */
-/* ============================= */
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(4, 1fr);
-  gap:22px;
-}
-
-/* CARD ROBUX */
-.card{
-  background:#fff;
-  border-radius:18px;
-  padding:18px;
-  text-align:center;
-  box-shadow:0 8px 22px rgba(0,0,0,.12);
-  transition:.35s;
-  display:flex;
-  flex-direction:column;
-}
-
-.card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 22px 50px rgba(0,0,0,.25);
-}
-
-/* ẢNH */
-.card-img{
-  width:100%;
-  height:120px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-bottom:14px;
-}
-
-.card-img img{
-  max-width:90px;
-  max-height:90px;
-  object-fit:contain;
-}
-
-/* TEXT */
-.card h3{
-  font-size:18px;
-  margin:6px 0;
-}
-
-.price{
-  font-size:18px;
-  font-weight:700;
-  color:#ff6a00;
-  margin:4px 0;
-}
-
-.desc{
-  font-size:14px;
-  color:#777;
-  margin-bottom:14px;
-}
-
-/* NÚT MUA */
-.buy-btn{
-  margin-top:auto;
-  display:block;
-  background:linear-gradient(135deg,#007bff,#00b0ff);
-  color:#fff;
-  text-decoration:none;
-  padding:12px;
-  border-radius:12px;
-  font-weight:700;
-  transition:.3s;
-}
-
-.buy-btn:hover{
-  transform:scale(1.05);
-  box-shadow:0 10px 28px rgba(0,123,255,.5);
-}
-
-/* MOBILE */
-@media(max-width:768px){
-  .grid{
-    grid-template-columns:repeat(2, 1fr);
-  }
-
-  .card-img{
-    height:100px;
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
