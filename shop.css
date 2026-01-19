@@ -343,4 +343,26 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* ===== LOGO IMAGE (REPLACE TEXT LOGO) ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img {
+  height: 42px;          /* an toàn cho desktop */
+  max-width: 160px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .logo img {
+    height: 36px;
+    max-width: 130px;
+  }
+}
+
 
