@@ -1,335 +1,331 @@
-/* ===============================
-   SHOP CSS – FINAL (Taphoarbx)
-   =============================== */
-
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --brand: #3b82f6;       /* xanh dương nhạt */
-  --brand-soft: #eef4ff;
-  --bg: #f6f8fc;
-  --card: #ffffff;
-  --text: #1f2937;
-  --muted: #6b7280;
-  --radius: 14px;
-  --shadow: 0 8px 24px rgba(0,0,0,.08);
-  --shadow-hover: 0 14px 40px rgba(0,0,0,.14);
+--brand: #3b82f6;       /* xanh dương nhạt */
+--brand-soft: #eef4ff;
+--bg: #f6f8fc;
+--card: #ffffff;
+--text: #1f2937;
+--muted: #6b7280;
+--radius: 14px;
+--shadow: 0 8px 24px rgba(0,0,0,.08);
+--shadow-hover: 0 14px 40px rgba(0,0,0,.14);
 }
 
 * {
-  box-sizing: border-box;
-  font-family: 'Inter', system-ui, sans-serif;
+box-sizing: border-box;
+font-family: 'Inter', system-ui, sans-serif;
 }
 
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
+margin: 0;
+background: var(--bg);
+color: var(--text);
 }
 
 /* ===============================
-   TOP BAR (ĐỒNG BỘ NHƯ INDEX)
-   =============================== */
+  TOP BAR (ĐỒNG BỘ)
+  =============================== */
 .topbar {
-  background: linear-gradient(90deg, #3b82f6, #60a5fa);
-  color: #fff;
+background: linear-gradient(90deg, #3b82f6, #60a5fa);
+color: #fff;
 }
 
 .topbar-inner {
-  max-width: 1200px;
-  margin: auto;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
+max-width: 1200px;
+margin: auto;
+padding: 10px 20px;
+display: flex;
+justify-content: space-between;
+font-size: 14px;
 }
 
 .topbar a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
+color: #fff;
+text-decoration: none;
+font-weight: 500;
 }
 
 /* ===============================
-   HEADER
-   =============================== */
+  HEADER
+  =============================== */
 .header {
-  background: #fff;
-  box-shadow: 0 4px 14px rgba(0,0,0,.06);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+background: #fff;
+box-shadow: 0 4px 14px rgba(0,0,0,.06);
+position: sticky;
+top: 0;
+z-index: 1000;
 }
 
 .header-inner {
-  max-width: 1200px;
-  margin: auto;
-  padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+max-width: 1200px;
+margin: auto;
+padding: 14px 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
 .logo {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--brand);
-  text-decoration: none;
+font-size: 22px;
+font-weight: 700;
+color: var(--brand);
+text-decoration: none;
 }
 
 /* ===============================
-   MENU (HIỆN TRƯỚC MẶT)
-   =============================== */
+  MENU (HIỆN TRƯỚC MẶT)
+  =============================== */
 .nav {
-  display: flex;
-  gap: 18px;
+display: flex;
+gap: 18px;
 }
 
 .nav a {
-  text-decoration: none;
-  font-weight: 500;
-  color: var(--text);
-  padding: 8px 14px;
-  border-radius: 10px;
-  transition: .2s;
+text-decoration: none;
+font-weight: 500;
+color: var(--text);
+padding: 8px 14px;
+border-radius: 10px;
+transition: .2s;
 }
 
 .nav a:hover,
 .nav a.active {
-  background: var(--brand-soft);
-  color: var(--brand);
+background: var(--brand-soft);
+color: var(--brand);
 }
 
 /* ===============================
-   PAGE TITLE CARD
-   =============================== */
+  PAGE TITLE CARD
+  =============================== */
 .page-title {
-  max-width: 1200px;
-  margin: 28px auto;
-  background: var(--card);
-  border-radius: var(--radius);
-  padding: 22px 24px;
-  box-shadow: var(--shadow);
+max-width: 1200px;
+margin: 28px auto;
+background: var(--card);
+border-radius: var(--radius);
+padding: 22px 24px;
+box-shadow: var(--shadow);
 }
 
 .page-title h1 {
-  margin: 0;
-  font-size: 22px;
-  color: var(--brand);
+margin: 0;
+font-size: 22px;
+color: var(--brand);
 }
 
 .page-title p {
-  margin-top: 6px;
-  font-size: 14px;
-  color: var(--muted);
+margin-top: 6px;
+font-size: 14px;
+color: var(--muted);
 }
 
 /* ===============================
-   SHOP GRID
-   =============================== */
+  SHOP GRID
+  =============================== */
 .shop-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px 60px;
+max-width: 1200px;
+margin: auto;
+padding: 0 20px 60px;
 }
 
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 22px;
 }
 
 /* ===============================
-   PRODUCT CARD
-   =============================== */
+  PRODUCT CARD
+  =============================== */
 .product-card {
-  background: var(--card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: .25s ease;
+background: var(--card);
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+overflow: hidden;
+display: flex;
+flex-direction: column;
+transition: .25s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-hover);
+transform: translateY(-6px);
+box-shadow: var(--shadow-hover);
 }
 
 .product-card img {
-  width: 100%;
-  height: 170px;
-  object-fit: contain;
-  background: #f1f4f9;
+width: 100%;
+height: 170px;
+object-fit: contain;
+background: #f1f4f9;
 }
 
 .product-body {
-  padding: 14px 16px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+padding: 14px 16px;
+flex: 1;
+display: flex;
+flex-direction: column;
 }
 
 .product-body h3 {
-  font-size: 15px;
-  margin: 0 0 6px;
+font-size: 15px;
+margin: 0 0 6px;
 }
 
 .product-body p {
-  font-size: 13px;
-  color: var(--muted);
-  margin: 0 0 10px;
-  line-height: 1.4;
+font-size: 13px;
+color: var(--muted);
+margin: 0 0 10px;
+line-height: 1.4;
 }
 
 .price {
-  font-weight: 600;
-  color: var(--brand);
-  margin-bottom: 12px;
+font-weight: 600;
+color: var(--brand);
+margin-bottom: 12px;
 }
 
 /* ===============================
-   BUY BUTTON (HOVER PRO)
-   =============================== */
+  BUY BUTTON (HOVER PRO)
+  =============================== */
 .buy-btn {
-  margin-top: auto;
-  text-align: center;
-  background: var(--brand);
-  color: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: .2s;
+margin-top: auto;
+text-align: center;
+background: var(--brand);
+color: #fff;
+padding: 10px;
+border-radius: 10px;
+font-weight: 600;
+text-decoration: none;
+transition: .2s;
 }
 
 .buy-btn:hover {
-  background: #2563eb;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(59,130,246,.4);
+background: #2563eb;
+transform: translateY(-2px);
+box-shadow: 0 6px 16px rgba(59,130,246,.4);
 }
 
 /* ===============================
-   RESPONSIVE
-   =============================== */
+  RESPONSIVE
+  =============================== */
 @media (max-width: 1024px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.product-grid {
+grid-template-columns: repeat(3, 1fr);
+}
 }
 
 @media (max-width: 768px) {
-  .header-inner {
-    flex-direction: column;
-    gap: 10px;
-  }
+.header-inner {
+flex-direction: column;
+gap: 10px;
+}
 
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.nav {
+flex-wrap: wrap;
+justify-content: center;
+}
 
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.product-grid {
+grid-template-columns: repeat(2, 1fr);
+}
 
 }
 /* ===============================
-   HOME PAGE (INDEX)
-   =============================== */
+  HOME PAGE (INDEX)
+  =============================== */
 
 .home-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 22px;
-  margin-top: 20px;
+display: grid;
+grid-template-columns: 1fr;
+gap: 22px;
+margin-top: 20px;
 }
 
 .home-card {
-  background: var(--card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 20px;
-  transition: .25s;
+background: var(--card);
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+padding: 20px;
+transition: .25s;
 }
 
 .home-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-hover);
+transform: translateY(-6px);
+box-shadow: var(--shadow-hover);
 }
 
 .home-card h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  color: var(--brand);
+margin-top: 0;
+margin-bottom: 12px;
+color: var(--brand);
 }
 
 .home-card p {
-  font-size: 14px;
-  color: var(--text);
-  line-height: 1.6;
+font-size: 14px;
+color: var(--text);
+line-height: 1.6;
 }
 
 .home-card hr {
-  border: none;
-  border-top: 1px solid #e5e7eb;
-  margin: 10px 0;
+border: none;
+border-top: 1px solid #e5e7eb;
+margin: 10px 0;
 }
 
 .note {
-  color: var(--muted);
-  font-size: 13px;
+color: var(--muted);
+font-size: 13px;
 }
 
 /* PAYMENT ROW */
 .pay-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 10px;
-  font-size: 14px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 10px;
+margin-top: 10px;
+font-size: 14px;
 }
 
 .pay-row button {
-  background: var(--brand);
-  color: #fff;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 8px;
-  cursor: pointer;
+background: var(--brand);
+color: #fff;
+border: none;
+padding: 6px 10px;
+border-radius: 8px;
+cursor: pointer;
 }
 
 .pay-row button:hover {
-  background: #2563eb;
+background: #2563eb;
 }
 
 .highlight {
-  color: #16a34a;
+color: #16a34a;
 }
 
 /* CONTACT BUTTONS */
 .contact-btn {
-  display: block;
-  margin-top: 10px;
-  padding: 10px 14px;
-  border-radius: 12px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: .2s;
+display: block;
+margin-top: 10px;
+padding: 10px 14px;
+border-radius: 12px;
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+transition: .2s;
 }
 
 .contact-btn span {
-  color: #e0f2fe;
-  font-weight: 600;
+color: #e0f2fe;
+font-weight: 600;
 }
 
 .contact-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-hover);
+transform: translateY(-3px);
+box-shadow: var(--shadow-hover);
 }
 
 .fb { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
@@ -339,29 +335,28 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .home-grid {
-    grid-template-columns: 1fr;
-  }
+.home-grid {
+grid-template-columns: 1fr;
+}
 }
 /* ===== LOGO IMAGE (REPLACE TEXT LOGO) ===== */
 .logo {
-  display: flex;
-  align-items: center;
-  height: 100%;
+display: flex;
+align-items: center;
+height: 100%;
 }
 
 .logo img {
-  height: 42px;          /* an toàn cho desktop */
-  max-width: 160px;
-  width: auto;
-  object-fit: contain;
+height: 42px;          /* an toàn cho desktop */
+max-width: 160px;
+width: auto;
+object-fit: contain;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .logo img {
-    height: 36px;
-    max-width: 130px;
-  }
+.logo img {
+height: 36px;
+max-width: 130px;
 }
-
+}
