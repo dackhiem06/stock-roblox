@@ -353,6 +353,12 @@ body {
   object-fit: contain;
 }
 
+.web-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .logo img {
@@ -360,4 +366,3 @@ body {
     max-width: 130px;
   }
 }
-
