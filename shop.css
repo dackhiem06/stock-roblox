@@ -206,17 +206,28 @@ body {
    RESPONSIVE
    =============================== */
 @media (max-width: 768px) {
+
+  /* 1. Ép tất cả dùng CÙNG padding */
+  .web-container {
+    padding: 0 15px !important;
+  }
+
+  .page-title .web-container {
+    padding: 15px !important;
+  }
+
+  /* 2. Fix header mobile */
   .header-inner {
-    flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    text-align: center;
   }
 
   .nav {
-    flex-wrap: wrap;
     justify-content: center;
   }
 
-  .logo img {
-    height: 36px;
+  /* 3. Tránh lệch do overflow */
+  body {
+    overflow-x: hidden;
   }
 }
