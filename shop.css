@@ -127,7 +127,7 @@ body {
 .shop-container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 20px 60px;
+  padding: 20 20px 60px;
 }
 
 .product-grid {
