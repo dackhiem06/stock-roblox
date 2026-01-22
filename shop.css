@@ -102,7 +102,7 @@ body {
    =============================== */
 .page-title {
   max-width: 1200px;
-  margin: 28px auto;
+  margin: 20px auto;
   background: var(--card);
   border-radius: var(--radius);
   padding: 22px 24px;
